@@ -63,4 +63,5 @@ ls.listdir()
 
 有两种上传文件方式
 1. 通过无线网络 WebREPL上传 http://micropython.org/webrepl
-2. 通过有线串口 安装
+2. 通过有线串口 安装ampy
+   `ampy --port /dev/ttyS4 put test.py`
