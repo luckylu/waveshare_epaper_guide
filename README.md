@@ -72,6 +72,7 @@ import test
 ```
 # 应用场景
 1. 显示天气和日历 https://github.com/lxrmido/node-paper-calendar
-   因为esp32 ram不够，只有520KB，实测只有小于10KB的图片才能读取到内存
+   因为esp32 ram不够，只有520KB，刷完固件后，实际可用内存不足100KB，实测只有小于10KB的图片才能读取到内存
    <img src="https://raw.githubusercontent.com/luckylu/waveshare_epaper_guide/master/IMG_2051.jpg" alt="drawing" width="600"/>
 2. 显示新闻
+3. 电子相框
