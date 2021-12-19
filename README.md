@@ -1,4 +1,4 @@
-# waveshare epaper guide
+# waveshare epaper guide(ESP32 with MicroPython)
 
 #### 本教程适用微雪epaper 7.5寸屏v2版本，搭配esp32开发板，其他版本未测试，理论上替换用各自的驱动程序也是可行的
 
@@ -65,3 +65,13 @@ ls.listdir()
 1. 通过无线网络 WebREPL上传 http://micropython.org/webrepl
 2. 通过有线串口 安装ampy
    `ampy --port /dev/ttyS4 put test.py`
+
+# 运行实例程序
+```python
+import test
+```
+# 应用场景
+1. 显示天气和日历 https://github.com/lxrmido/node-paper-calendar
+   因为esp32 ram不够，只有520KB，实测只有小于10KB的图片才能读取到内存
+   <img src="https://raw.githubusercontent.com/luckylu/waveshare_epaper_guide/master/IMG_2051.jpg" alt="drawing" width="600"/>
+2. 显示新闻
